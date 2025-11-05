@@ -1,37 +1,37 @@
 import React from "react";
-import { Linkedin, Mail, Github, Code2, Terminal } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center bg-white dark:bg-black px-6 transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center bg-white dark:bg-black px-6 md:px-16 lg:px-28 transition-colors duration-300 py-16 md:py-0"
     >
-      <div className="max-w-6xl w-full grid md:grid-cols-2 items-center">
+      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* LEFT IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-8 md:mb-0">
           <img
             src="/about.png"
             alt="About"
-            className="w-[60%] max-w-md aspect-[3/4] object-cover rounded-xl"
+            className="w-[80%] xs:w-[70%] sm:w-[60%] md:w-[85%] lg:w-[70%] max-w-sm aspect-[3/4] object-cover  shadow-lg"
           />
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="space-y-4 flex flex-col gap-4">
-          <h2 className="font-anton text-5xl md:text-7xl font-extrabold text-blue-600 dark:text-cyan-400 tracking-widest">
+        <div className="space-y-4 flex flex-col gap-6 text-center md:text-left">
+          <h2 className="font-anton text-4xl sm:text-5xl md:text-7xl font-extrabold text-blue-600 dark:text-cyan-400 tracking-widest">
             ABOUT ME
           </h2>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-4 mb-3">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mb-3">
             <a
               href="https://www.linkedin.com/in/harshita-bansal-65ba40327/"
               target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-cyan-400 hover:text-white transition"
             >
               <Linkedin
-                size={22}
+                size={20}
                 className="text-blue-600 dark:text-cyan-400"
               />
             </a>
@@ -40,7 +40,7 @@ export default function About() {
               href="mailto:harshitabansal3737@gmail.com"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-red-500 hover:text-white transition"
             >
-              <Mail size={22} className="text-red-600" />
+              <Mail size={20} className="text-red-600" />
             </a>
 
             <a
@@ -48,10 +48,9 @@ export default function About() {
               target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-black dark:hover:bg-gray-900 hover:text-white transition"
             >
-              <Github size={22} className="text-black dark:text-white" />
+              <Github size={20} className="text-black dark:text-white" />
             </a>
 
-            {/* Codeforces */}
             <a
               href="https://codeforces.com/profile/harshitabansal"
               target="_blank"
@@ -60,11 +59,10 @@ export default function About() {
               <img
                 src="/cf.png"
                 alt="Codeforces"
-                className="w-6 h-6 rounded-full"
+                className="w-5 h-5 rounded-full"
               />
             </a>
 
-            {/* LeetCode */}
             <a
               href="https://leetcode.com/u/codeXcrafter/"
               target="_blank"
@@ -73,12 +71,12 @@ export default function About() {
               <img
                 src="/lc.png"
                 alt="LeetCode"
-                className="w-6 h-6 rounded-full"
+                className="w-5 h-5 rounded-full"
               />
             </a>
           </div>
 
-          <p className="text-gray-800 dark:text-gray-300 text-base md:text-lg leading-relaxed max-w-lg">
+          <p className="text-gray-800 dark:text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
             I specialize in building the full spectrum of digital experiences,
             from the structural logic of competitive programming to the
             aesthetic finesse of frontend development and UI/UX design. For me,

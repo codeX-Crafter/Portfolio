@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center px-6 bg-white dark:bg-black transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center px-10 md:px-24 bg-white dark:bg-black transition-colors duration-300"
     >
       <div className="max-w-6xl w-full flex flex-col items-center space-y-14">
         <h2 className="font-anton text-5xl md:text-7xl font-extrabold text-blue-600 dark:text-cyan-400 tracking-widest">

@@ -6,7 +6,7 @@ export default function Landing() {
       id="home"
       className="min-h-screen flex items-center justify-center bg-white dark:bg-black px-6 transition-colors duration-300"
     >
-      <div className="max-w-6xl w-full flex gap-11 items-center justify-center ">
+      <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row gap-11 items-center justify-center text-center md:text-left">
         {/* LEFT TEXT */}
         <div className="space-y-3">
           <p className="text-3xl font-medium text-gray-700 dark:text-gray-300">
@@ -33,7 +33,7 @@ export default function Landing() {
           <img
             src="/hero.png"
             alt="hero img"
-            className="w-[90%] max-w-sm md:max-w-md drop-shadow-[0_0_40px_rgba(0,255,255,0.3)] transition-all"
+            className="w-[75%] max-w-[260px] sm:w-[80%] sm:max-w-[300px] md:max-w-md drop-shadow-[0_0_40px_rgba(0,255,255,0.3)] transition-all"
           />
         </div>
       </div>

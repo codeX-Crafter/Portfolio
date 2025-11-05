@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full py-6 bg-white dark:bg-black transition-colors duration-300 shadow-sm">
-      <div className="max-w-6xl mx-auto flex justify-center gap-8 text-lg font-semibold">
+      <div className="max-w-6xl mx-auto hidden md:flex justify-center gap-8 text-lg font-semibold">
         {navItems.map((item) => (
           <a
             key={item.id}
