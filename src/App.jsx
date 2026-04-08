@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Sun, Moon } from "lucide-react";
 import Navbar from "./sections/Navbar";
 import Footer from "./sections/Footer";
 import Landing from "./sections/Landing";
@@ -22,9 +23,10 @@ function App() {
       {/* Dark Mode Toggle */}
       <button
         onClick={toggleTheme}
-        className="fixed top-4 right-4 px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm dark:text-white shadow z-50"
+        className="fixed top-4 right-4 flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm dark:text-white shadow z-50"
       >
-        {dark ? "☀️ Light" : "🌙 Dark"}
+        {dark ? <Sun size={16} /> : <Moon size={16} />}
+        {dark ? "Light" : "Dark"}
       </button>
       <div className="min-h-screen bg-white dark:bg-black transition-colors flex flex-col gap-16 md:gap-20">
         {/* Sections */}
